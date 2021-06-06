@@ -2,12 +2,6 @@
 - hosts: all
 
   tasks:
-  -  name: file read
-     with_file: "/text/test.txt"
-     register: content
-  -  name: log count
-     log_count:
-       num: 1
-     register: result
-     debug:
-       msg: "{{ result }}"
+  - name: file read
+    with_file: "/text/test.txt"
+    register: content
