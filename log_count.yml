@@ -1,8 +1,8 @@
 ---
 - hosts: all
-  become: true
   tasks:
     - name: file read
+      debug: var=item
       register: content
       with_file:
         - /text/test.txt
