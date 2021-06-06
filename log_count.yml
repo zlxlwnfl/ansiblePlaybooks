@@ -1,6 +1,6 @@
 ---
 - hosts: all
-
+  
   tasks:
   - name: file read
     with_file: "/text/test.txt"
