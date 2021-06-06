@@ -1,5 +1,8 @@
-- hosts: all
-  tasks:
-    - name: file read
-      with_file: "/text/test.txt"
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      name: "file read"
       register: content
+      with_file: "/text/test.txt"
