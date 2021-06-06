@@ -10,4 +10,3 @@
       log_count:
         num: 1
       register: result
-      debug: var=item
