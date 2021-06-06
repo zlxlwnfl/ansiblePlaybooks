@@ -1,0 +1,8 @@
+---
+- name: Log count
+  hosts: all
+  tasks:
+    - name: file read
+      debug:
+        msg: item
+      with_file: "/text/test.txt"
