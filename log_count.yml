@@ -10,5 +10,3 @@
       log_count:
         num: 1
       register: result
-      debug:
-        msg: "{{ result }}"
