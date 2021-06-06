@@ -8,5 +8,5 @@
         - /text/test.txt
     - name: log count
       log_count:
-        num: 1
-      register: result
+        strList: {{ content.stdout_lines }}
+      debug: var=item
