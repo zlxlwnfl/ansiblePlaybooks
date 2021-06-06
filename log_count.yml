@@ -1,7 +1,8 @@
 ---
 - hosts: all
+  become: true
   tasks:
     - name: file read
       register: content
       with_file:
-        - "/text/test.txt"
+        - /text/test.txt
