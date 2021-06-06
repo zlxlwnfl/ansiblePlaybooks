@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: file read
-      debug: msg=item
+      debug: var=item
       register: content
       with_file:
         - /text/test.txt
@@ -10,3 +10,4 @@
       log_count:
         num: 1
       register: result
+      debug: var=item
