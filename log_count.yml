@@ -3,4 +3,5 @@
   tasks:
     - name: "file read"
       register: content
-      with_file: /text/test.txt
+      with_file:
+        - "/text/test.txt"
