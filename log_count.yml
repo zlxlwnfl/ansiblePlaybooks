@@ -6,3 +6,9 @@
       register: content
       with_file:
         - /text/test.txt
+    - name: log count
+      log_count:
+        num: 1
+      register: result
+      debug:
+        msg: "{{ result }}"
